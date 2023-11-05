@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto Serif:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {      /**/
+    margin: 0;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    font-family : 'Noto Serif', sans-serif; 
+}
+
+
+h1 {
+    font-size: 25px;
+    color: rgb(156, 45, 45);
+    margin-top: 23%;
+
+}
+h2{
+    font-size: 50px;
+    color:#222;
+    float: left;
+    top:60px;
+}
+h3
+{
+    font-size: 50px;
+    text-align: center;
+    font-family : 'Noto Serif', sans-serif;
+    
+}
+body {
+    width: 100%;
+    display: grid;
+}
+
+    
+/*hearder*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 20px 80px 5px;
+    background: #1e1e20;
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.06);
+    z-index: 999px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header a img {
+  height:50px; 
+  width: auto;
+}
+
+#navbar{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding : 0 20px;
+    position : relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #fff;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: rgb(216, 52, 52);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 15px;
+}
+button:hover {background-color: #FF0000}
+
+button:active {
+  background-color: #FF0000;
+  transform: translateY(4px);
+}
+
+
+.heading{
+  padding:0 20px 0 20px;
+  font-style:bold;
+}
+
+/*footer*/
+
+/* The KickSite logo */
+
+.footerkoto img{
+  height: 50px;
+  width:auto;
+
+}
+
+/*footer-body*/
+.footerkoto{
+  background: #1e1e20;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 40px 35px;
+}
+
+.footerkoto .left-foot,
+.footerkoto .mid-footer,
+.footerkoto .right-footer{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footerkoto .left-foot{
+  width: 40%;
+}
+
+
+/* Footer links */
+
+.footerkoto .footlinks{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footerkoto .footlinks a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footerkoto .sub-text{
+  color:  #ffff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footerkoto .mid-footer{
+  width: 35%;
+}
+
+.footerkoto .mid-footer i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footerkoto .mid-footer i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footerkoto .mid-footer p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footerkoto .mid-footer p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footerkoto .mid-footer p a{
+  color:  rgb(178, 32, 32);
+  text-decoration: underline;
+}
+
+.footerkoto .footlinks a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footerkoto .footlinks .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+
+.footerkoto .footer-company-about{
+line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.footerkoto .right-footer{
+  width: 20%;
+}
+
+.footerkoto .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/****footer-icons*/
+
+.footerkoto .footer-icons{
+  margin-top: 20px;
+}
+
+.footerkoto .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+/* rESponsive colimn for the footer*/
+
+@media (max-width: 880px) {
+
+  .footerkoto{
+    font: bold 14px sans-serif;
+  }
+
+  .footerkoto .left-foot,
+  .footerkoto .mid-footer,
+  .footerkoto .right-footer{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footerkoto .mid-footer i{
+    margin-left: 0;
+  }
+}
+
+
+
